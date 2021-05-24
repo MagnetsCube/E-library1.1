@@ -1,0 +1,40 @@
+﻿<Page x:Class="E_library1._1.Pages.Page_user_profile"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:E_library1._1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page_user_profile">
+
+    <Grid Background="White">
+        <StackPanel Orientation="Horizontal" Margin="0 50">
+            <StackPanel Margin="5 0">
+                <TextBlock Text="ФИО:" HorizontalAlignment="Right"
+                Margin="0 5"/>
+                <TextBlock Text="Телефон:" HorizontalAlignment="Right"
+                Margin="0 5"/>
+                <TextBlock Text="Почта:" HorizontalAlignment="Right"
+                Margin="0 5"/>
+                <TextBlock Text="Пол:" HorizontalAlignment="Right"
+                Margin="0 5"/>
+                <TextBlock Text="Дата рождения:" HorizontalAlignment="Right"
+                Margin="0 5"/>
+                <TextBlock Text="Должность:" HorizontalAlignment="Right"
+                Margin="0 5"/>
+                <TextBlock Name="_class" Text="Класс:" HorizontalAlignment="Right" 
+                Margin="0 5"/>
+            </StackPanel>
+            <StackPanel Margin="5 0">
+                <TextBlock Name="_fio" HorizontalAlignment="Left" Margin="0 5"/>
+                <TextBlock Name="_telephone" HorizontalAlignment="Left" Margin="0 5"/>
+                <TextBlock Name="_email" HorizontalAlignment="Left" Margin="0 5"/>
+                <TextBlock Name="_gender" HorizontalAlignment="Left" Margin="0 5"/>
+                <TextBlock Name="_birthday" Text="{Binding StringFormat='{}{0:dd/MM/yyyy HH:mm}'}" HorizontalAlignment="Left" Margin="0 5"/>
+                <TextBlock Name="_role" HorizontalAlignment="Left" Margin="0 5"/>
+                <TextBlock Name="_classs" HorizontalAlignment="Left" Margin="0 5"/>
+            </StackPanel>
+            </StackPanel>
+    </Grid>
+</Page>

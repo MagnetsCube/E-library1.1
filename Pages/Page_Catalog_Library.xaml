@@ -1,0 +1,40 @@
+﻿<Page x:Class="E_library1._1.Pages.Page_Catalog_Library"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:E_library1._1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page_Catalog_Library">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.ColumnSpan="3" VerticalContentAlignment="Center">
+            <MenuItem x:Name="_userinfo" Header="Личный кабинет" Click="_userinfo_Click"/>
+            <MenuItem x:Name="_userlocallibrary" Header="Моя библиотека" Click="_userlocallibrary_Click"/>
+            <MenuItem x:Name="_userlibrary" Header="Библиотека" Click="_userlibrary_Click"/>
+            <MenuItem x:Name="_exit" Header="Выход">
+                <MenuItem x:Name="_relog" Header="Выйти из системы" Click="_relog_Click"/>
+                <MenuItem x:Name="_exitsys" Header="Закрыть приложение" Click="_exitsys_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="_operation" Header="Операции">
+                <MenuItem x:Name="_userlist" Header = "Пользователи" Click="_userlist_Click"/>
+                <MenuItem x:Name="_userchecklist" Header="Проверка пользователей"/>
+                <MenuItem x:Name="_books" Header="Книги"/>
+            </MenuItem>
+        </Menu>
+        <Frame x:Name="_framesustem" 
+               NavigationUIVisibility="Hidden"
+               Grid.Row="1"
+               Grid.ColumnSpan="3"/>
+    </Grid>
+</Page>

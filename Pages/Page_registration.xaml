@@ -1,0 +1,149 @@
+﻿<Page x:Class="E_library1._1.Pages.Page_registration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:E_library1._1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page_registration">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Margin="0 0 10 0">
+                <TextBlock Text="Фамилия:"
+                           FontSize="17"
+                           Width="150"
+                           TextAlignment="Right"
+                           Height="25"/>
+                <TextBlock Text="Имя:"
+                           FontSize="17"
+                           Width="150"
+                           TextAlignment="Right"
+                           Height="25"/>
+                <TextBlock Text="Отчество:"
+                           FontSize="17"
+                           Width="150"
+                           TextAlignment="Right"
+                           Height="25"/>
+                <TextBlock Text="Email:"
+                           FontSize="17"
+                           Width="150"
+                           TextAlignment="Right"
+                           Height="25"/>
+                <TextBlock Text="Телефон:"
+                           FontSize="17"
+                           Width="150"
+                           TextAlignment="Right"
+                           Height="25"/>
+                <TextBlock Text="Пароль:"
+                           FontSize="17"
+                           Width="150"
+                           TextAlignment="Right"
+                           Height="25"/>
+                <TextBlock Text="Повторить пароль:"
+                           FontSize="17"
+                           Width="150"
+                           TextAlignment="Right"
+                           Height="25"/>
+                <TextBlock Text="Пол:"
+                           FontSize="17"
+                           Width="150"
+                           TextAlignment="Right"
+                           Height="25"/>
+                <TextBlock Text="Дата рождения:"
+                           FontSize="17"
+                           Width="150"
+                           TextAlignment="Right"
+                           Height="25"/>
+                <TextBlock Text="Должность:"
+                           FontSize="17"
+                           Width="150"
+                           TextAlignment="Right"
+                           Height="25"/>
+                <TextBlock x:Name="_classtxt"
+                           Text="Класс:"
+                           FontSize="17"
+                           Width="150"
+                           TextAlignment="Right"
+                           Height="25"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="_lastname"
+                         Width="150"
+                         Height="25"
+                         FontSize="17"
+                         MaxLength="100"
+                         VerticalAlignment="Center"/>
+                <TextBox x:Name="_firstname"
+                         Width="150"
+                         Height="25"
+                         FontSize="17"
+                         MaxLength="100"
+                         VerticalAlignment="Center"/>
+                <TextBox x:Name="_patronicym"
+                         Width="150"
+                         Height="25"
+                         FontSize="17"
+                         MaxLength="100"
+                         VerticalAlignment="Center"/>
+                <TextBox x:Name="_email"
+                         Width="150"
+                         Height="25"
+                         FontSize="17"
+                         MaxLength="100"
+                         VerticalAlignment="Center"/>
+                <TextBox x:Name="_telephone"
+                         Width="150"
+                         Height="25"
+                         FontSize="17"
+                         MaxLength="100"
+                         VerticalAlignment="Center"/>
+                <PasswordBox x:Name="_password"
+                         Width="150"
+                         Height="25"
+                         FontSize="17"
+                         MaxLength="100"
+                         VerticalAlignment="Center"/>
+                <PasswordBox x:Name="_returnpassword"
+                         Width="150"
+                         Height="25"
+                         FontSize="17"
+                         MaxLength="100"
+                         VerticalAlignment="Center"/>
+                <ComboBox x:Name="_gender"
+                          Height="25"/>
+                <DatePicker x:Name="_datebirthday"
+                            Height="25"/>
+                <ComboBox x:Name="_role"
+                          Height="25" SelectionChanged="_role_SelectionChanged"/>
+                <ComboBox x:Name="_class"
+                          Height="25"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center">
+            <Button x:Name="_newuser" 
+                    Content="Регистрация" 
+                    Height="30" 
+                    Width="100" 
+                    FontSize="15"
+                    Margin="0 0 10 0" Click="_newuser_Click"/>
+            <Button x:Name="_exitreg" 
+                    Content="Назад" 
+                    Height="30" 
+                    Width="100" 
+                    FontSize="15"
+                    Margin="10 0 0 0" Click="_exitreg_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

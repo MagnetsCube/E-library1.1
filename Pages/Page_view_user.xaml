@@ -1,0 +1,47 @@
+﻿<Page x:Class="E_library1._1.Pages.Page_view_user"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:E_library1._1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page_view_user">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Center">
+            <Button Name="_edit" Content="Изменить" Width="70" Margin="5 0" Click="_edit_Click"/>
+            <Button Name="_delete" Content="Удалить" Width="70" Margin="5 0" Click="_delete_Click"/>
+        </StackPanel>
+        <ListView Name="_listview">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ИД"
+                                    DisplayMemberBinding="{Binding idUser}"/>
+                    <GridViewColumn Header="ФИО"
+                                    DisplayMemberBinding="{Binding FIO_USER}"/>
+                    <GridViewColumn Header="Почта"
+                                    DisplayMemberBinding="{Binding Email}"/>
+                    <GridViewColumn Header="Телефон"
+                                    DisplayMemberBinding="{Binding Telephone}"/>
+                    <GridViewColumn Header="Дата рождения"
+                                    DisplayMemberBinding="{Binding Birthday}"/>
+                    <GridViewColumn Header="Должность"
+                                    DisplayMemberBinding="{Binding NameRole}"/>
+                    <GridViewColumn Header="Класс"
+                                    DisplayMemberBinding="{Binding Class}"/>
+                    <GridViewColumn Header="Пол"
+                                    DisplayMemberBinding="{Binding Gender}"/>
+                    <GridViewColumn Header="Статус"
+                                    DisplayMemberBinding="{Binding CheckUser}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

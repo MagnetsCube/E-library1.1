@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="013ed86eece047bf88750cb6dd5eb63b" Name="Diagram1">
+        <EntityTypeShape EntityType="E_libraryModel.Author" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.AuthorBook" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.Book" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.Class" Width="1.5" PointX="3.75" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.Collection" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.CollectionBook" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.Ganre" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.GanreBook" Width="1.5" PointX="5.25" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.Gender" Width="1.5" PointX="3.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.Image" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.Letter" Width="1.5" PointX="1.5" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.Library" Width="1.5" PointX="8.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.Number" Width="1.5" PointX="1.5" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.Role" Width="1.5" PointX="3.75" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.sysdiagrams" Width="1.5" PointX="8.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.Tag" Width="1.5" PointX="6" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.TagBook" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.Userdb" Width="1.5" PointX="6" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.Catalog_Library_App" Width="1.5" PointX="10.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.Local_Book_Information" Width="1.5" PointX="10.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_libraryModel.User_List_View" Width="1.5" PointX="7.75" PointY="11.125" IsExpanded="true" />
+        <AssociationConnector Association="E_libraryModel.FK_AuthorBook_Author" ManuallyRouted="false" />
+        <AssociationConnector Association="E_libraryModel.FK_AuthorBook_Book" ManuallyRouted="false" />
+        <AssociationConnector Association="E_libraryModel.FK_Book_Image" ManuallyRouted="false" />
+        <AssociationConnector Association="E_libraryModel.FK_CollectionBook_Book" ManuallyRouted="false" />
+        <AssociationConnector Association="E_libraryModel.FK_GanreBook_Book" ManuallyRouted="false" />
+        <AssociationConnector Association="E_libraryModel.FK_Library_Book" ManuallyRouted="false" />
+        <AssociationConnector Association="E_libraryModel.FK_TagBook_Book" ManuallyRouted="false" />
+        <AssociationConnector Association="E_libraryModel.FK_Class_Letter" ManuallyRouted="false" />
+        <AssociationConnector Association="E_libraryModel.FK_Class_Number" ManuallyRouted="false" />
+        <AssociationConnector Association="E_libraryModel.FK_User_Class" ManuallyRouted="false" />
+        <AssociationConnector Association="E_libraryModel.FK_CollectionBook_Collection" ManuallyRouted="false" />
+        <AssociationConnector Association="E_libraryModel.FK_GanreBook_Ganre" ManuallyRouted="false" />
+        <AssociationConnector Association="E_libraryModel.FK_User_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="E_libraryModel.FK_Library_User" ManuallyRouted="false" />
+        <AssociationConnector Association="E_libraryModel.FK_User_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="E_libraryModel.FK_TagBook_Tag" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="E_libraryModel.Class_reg" Width="1.5" PointX="10.375" PointY="11.75" />
+        <EntityTypeShape EntityType="E_libraryModel.Catalog_Library_User" Width="1.5" PointX="11.375" PointY="3.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

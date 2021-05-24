@@ -1,0 +1,72 @@
+﻿<Page x:Class="E_library1._1.Pages.Page_authorization"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:E_library1._1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page_authorization">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">
+            <TextBlock Text="Логин"
+                       FontSize="17"/>
+            <TextBox x:Name="_login" 
+                     Margin="0 5"
+                     FontSize="17"
+                     VerticalAlignment="Center"/>
+            <TextBlock Text="Пароль"
+                       FontSize="17"/>
+            <Border>
+                <Grid>
+                    <PasswordBox x:Name="_passpass" 
+                         Margin=" 0 5"
+                         FontSize="17"
+                         VerticalAlignment="Center"/>
+                    <TextBox x:Name="_passtext"
+                             FontSize="17"
+                             VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+            <CheckBox x:Name="_checkpassword" 
+                      Content="Показать пароль"
+                      Margin="0 5"
+                      HorizontalAlignment="Center"
+                      Click="_checkpassword_Click"
+                      Width="130"/>
+            <CheckBox x:Name="_autoenter"
+                      Content="Запомнить пароль"
+                      Margin="0 5"
+                      HorizontalAlignment="Center"
+                      Width="130" Click="_autoenter_Click"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="_enter" 
+                        Content="Вход"
+                        Width="110"
+                        FontSize="17" 
+                        Margin="10 0" Click="_enter_Click"/>
+                <Button x:Name="_registration" 
+                        Content="Регистрация"
+                        Width="110"
+                        FontSize="17"
+                        Margin="10 0" Click="_registration_Click"/>
+            </StackPanel>
+            <Button x:Name="_exit"
+                    Content="Выход"
+                    HorizontalAlignment="Stretch"
+                    Margin="0 5"
+                    FontSize="17" Click="_exit_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
